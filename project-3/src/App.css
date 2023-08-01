@@ -1,0 +1,86 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.todo-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-card.completed {
+  border-color: #4caf50;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo-number {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.todo-title {
+  flex: 1;
+  font-size: 18px;
+}
+
+.todo-status {
+  margin-top: 10px;
+  color: #888;
+}
+
+.todo-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.update-button, .remove-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-button:hover, .remove-button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: flex;
+  margin-top: 20px;
+}
+
+form input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+

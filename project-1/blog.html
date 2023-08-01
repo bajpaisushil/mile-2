@@ -1,0 +1,46 @@
+<!-- blog.html (Blog Page) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWSkills Blog - Blog Post</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>PWSkills Blog</h1>
+  </header>
+  <a href="index.html" class="back-to-home">Back to Home</a>
+  <main id="blogPage">
+    <!-- Blog content will be dynamically added here -->
+  </main>
+  <script>
+    // Get the index of the blog post from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const blogIndex = urlParams.get("index");
+
+    // Retrieve blogs from LocalStorage
+    const blogs = JSON.parse(localStorage.getItem("blogs")) || [];
+
+    // Function to display the blog post
+    function displayBlog() {
+      const blog = blogs[blogIndex];
+      const blogPage = document.getElementById("blogPage");
+      blogPage.innerHTML = `
+        <div class="blog-post">
+          <img src="${blog.imageUrl}" alt="Blog Image" class="blog-image">
+          <div class="blog-details">
+            <h2>${blog.title}</h2>
+            <p>${blog.content}</p>
+          </div>
+        </div>`;
+    }
+
+    displayBlog();
+  </script>
+</body>
+
+</html>

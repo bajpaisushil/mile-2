@@ -1,0 +1,39 @@
+<!-- index.html (Home Page) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWSkills Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>PWSkills Blog</h1>
+    <button id="addBlogBtn">+</button>
+  </header>
+  <main id="homePage">
+    <!-- Blog posts will be dynamically added here -->
+  </main>
+  <div id="addBlogModal" class="modal">
+    <div id="addBlogModal" class="modal">
+      <div class="modal-content">
+        <h2>Add New Blog</h2>
+        <label for="blogImageUrl">Enter Blog Post Image URL:</label>
+        <input type="text" id="blogImageUrl" placeholder="Enter image URL">
+        <label for="blogTitle">Enter Blog Post Title:</label>
+        <input type="text" id="blogTitle" placeholder="Enter title">
+        <label for="blogDescription">Enter Blog Description:</label>
+        <textarea id="blogDescription" placeholder="Enter description"></textarea>
+        <label for="blogContent">Write Blog:</label>
+        <textarea id="blogContent" placeholder="Write your blog here"></textarea>
+        <button>Submit</button>
+      </div>
+    </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
+
